@@ -103,7 +103,7 @@ const Skills = ({ id }) => {
         <div className="row d-flex justify-content-between">
           
           {Object.keys(skillsData).map(category => (
-            <div className="col-lg-4 col-sm-6 mt-5 " key={category}>
+            <div className="col-lg-4 col-sm-6 mt-3 mb-5 " key={category}>
               <div className='d-flex justify-content-center '>
                 <h3 className=''>{category.replace(/([A-Z])/g, ' $1').trim()}</h3> 
               </div>
