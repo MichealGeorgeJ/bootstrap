@@ -3,37 +3,42 @@ body,html {
   font-optical-sizing: auto;
   font-weight: 602;
   font-style: normal;
-  background-color:white;
-  color:#0f0;
-  outline: solid #f00 1px !important;
+  color:white;
  width: 100%;
- overflow-x: hidden;
+ border: none !important;
+ 
+  
+}
 
-  
-  margin: 0;
-  padding: 0;
-  
+
+
+
+#nav-bar{
+  height: 4rem;
+  overflow: hidden;
 }
 #about{
   background-color: #7f00ff ;
   margin-top: 4rem;
   width:100%;
+  overflow: hidden;
+  height: 110vh !important;
   
 }
-#nav-bar{
-  height: 4rem;
-}
+
+
 .brand-name{
   font-size:2.5rem !important;
 }
 #skills{
   color:black;
   width:100%;
-  
+  overflow: hidden;
 }
 #projects{
   color:black;
   background-color:#36454f;
+  overflow: hidden;
 }
 #resume::after{
   content:'  dd ';
@@ -43,13 +48,34 @@ body,html {
   padding: 0;
   display: block;
 }
+#bio{
+  overflow: hidden;
+  border: none;
+}
 
 #resume{
   background-image: linear-gradient(to right, #7f00ff 0%, #830ecc 100%);
   position:relative;
   margin-top:3rem;
+  overflow: hidden;
 }
-
+#certificate{
+  background-color: #36454f;
+  border-bottom:2px solid white ;
+  overflow: hidden;
+}
+#contact{
+  background-image: linear-gradient(to bottom,#36454f 100%, white 0%);
+  background-color:#f7f3f9;
+  color:black;
+  overflow: hidden;
+}
+#footer{
+  background-color: #7f00ff;
+  color: #ffffff;
+  overflow: hidden;
+  
+}
 .design3{
 
   position: absolute;
@@ -124,21 +150,7 @@ body,html {
 
   
 }
-#certificate{
-  background-color: #36454f;
-  border-bottom:2px solid white ;
-}
-#contact{
-  background-image: linear-gradient(to bottom,#36454f 100%, white 0%);
-  background-color:#f7f3f9;
-  color:black;
-}
-#footer{
-  background-color: #7f00ff;
-  color: #ffffff;
-  
-  
-}
+
 .bio p{
   font-size: 1.4rem !important;
   font-weight: 100;
@@ -232,13 +244,14 @@ font-size:4rem !important;
 .about-btn{
   margin-top: 4rem;
   margin-left: 17rem;
-  box-shadow: #ffffff 0px 7px 29px 0px;
-  /* animation: leftMove 7s alternate;
-  -webkit-animation: leftMove 7s alternate; */
+  /* box-shadow: #ffffff 0px 7px 29px 0px; */
+  animation: leftMove 7s alternate;
+  -webkit-animation: leftMove 7s alternate;
   border-radius:8px;
 }
 .about-btn:hover{
   scale: 1.2;
+  transition: 1.5s;
 }
 .pentagon-background {
   clip-path: polygon(60% 0%, 100% 48%, 72% 100%, 28% 100%, 0% 58%);
@@ -398,9 +411,9 @@ font-size:4rem !important;
     -o-transform: translateY(0);
 }
 }
-/* .nav-items{
+.nav-items{
   animation: movetoTop 0.8s ease forwards 0.1s;
-} */
+}
 .nav-group:nth-child(1) {
   animation: movetoTop 0.8s ease forwards 0.1s;
 }
@@ -441,11 +454,12 @@ font-size:4rem !important;
   background-color:#7f00ff;
   color:white !important;
   
+  
 }
 
 .nav-items{
-  /* animation:nav-items 3s  alternate;
-  -webkit-animation:nav-items 3s  alternate; */
+  animation:nav-items 3s  alternate;
+  -webkit-animation:nav-items 3s  alternate;
 }
 
 @keyframes nav-items{
@@ -502,10 +516,20 @@ font-size:4rem !important;
   .circle::before{
     display:none;
   }
+  .circle::after{
+  display: none;
+   
+  }
   #nav-bar{
     height: auto !important;
     padding:0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     
+    
+  }
+  .nav-items{
+   width:6rem;
   }
   #about{
     background-color: #7f00ff ;
@@ -540,12 +564,12 @@ margin-bottom:0 !important;
   .about-btn{
    display: flex !important;
    justify-content: center !important;
-   align-items: center !important;
  margin:auto;
    
     
   }
   .name{
+    
     font-size: 2rem !important;
   }
   .description{
@@ -560,11 +584,44 @@ margin-bottom:0 !important;
   }
   
 }
-@media (max-width:546px){
+@media (max-width:746px){
+  .foo{
+    display: flex;
+    flex-direction:column !important;
+    /* flex-wrap: wrap; */
+    margin-left: 0 !important;
+    
+ }
+ .foo h4{
+ 
+  border: none !important;
+ }
+ .footer{
+  margin-left: 0 !important;
+ }
   .design{
     left:0;
     top:47vh;
   }
+  #about{
+    height:72vh !important;
+    
+  }
+  #bio{
+border: none !important;
+  }
+  .about-btn{
+    display: flex !important;
+    justify-content: center !important;
+  margin:auto;
+  align-items: center;
+    
+     
+   }
+   .description{
+    margin: auto !important;
+    padding: auto !important;
+   }
   
 }
 

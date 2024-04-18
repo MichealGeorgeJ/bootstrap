@@ -114,15 +114,15 @@ const About = ({ id }) => {
       <div className=''>
         <div className="row">
           <div className="col about d-flex justify-content-between flex-row ">
-            <div className={`profile-text col-lg-6 col-sm-12  `}>
+            <div className={`profile-text col-lg-6 col-sm-12 d-flex justify-content-center align-items-center  `}>
               
               <h1 className='name'>{typedName}</h1>
               <h5 className='description ml-5'>
-                I am a fervent <b><span style={{color:"#36454f"}}>full-stack developer</span></b>, committed to translating concepts into digital brilliance. With expertise in both frontend finesse and backend robustness.
+                I am a fervent <b><span style={{color:"#0f0"}}>full-stack developer</span></b>, committed to translating concepts into digital brilliance. With expertise in both frontend finesse and backend robustness.
               </h5>
              
              <div className="texts d-flex justify-content-center align-items-center ">
-             <div><h1 style={{color:"#36454f"}} ref={typedElement} className=' texts'></h1></div>
+             <div><h1 style={{color:"#0f0"}} ref={typedElement} className=' texts'></h1></div>
              </div>
              <div className='d-flex justify-between row '>
     <div className='col'>
@@ -150,8 +150,8 @@ const About = ({ id }) => {
           
 
             
-              <div className='about-btn projects-card  ' >
-                <button style={{color:"#ffffff",backgroundColor:"#36454f"}}  onClick={() => scrollToSection('bio')} className='btn d-flex align-items-center justify-content-center  '>
+              <div className='about-btn w-100  d-flex justify-content-center  ' >
+                <button style={{color:"#0f0",backgroundColor:"#36454f",borderRadius:'10px'}}  onClick={() => scrollToSection('bio')} className='btn d-flex align-items-center justify-content-center w-25  '>
                   <h3 className='mt-2'>About ...</h3>
                 </button>
               </div>

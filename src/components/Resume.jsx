@@ -3,12 +3,12 @@ import React from 'react'
 const Resume = ({id}) => {
   return (
     <div id={id}>
-      <div className="container-fluid  ">
+      <div className="  ">
       <div className="design"></div>
       <div className="design2"></div>
       <div className="design3"></div>
         <div className="row d-flex justify-content-center ">
-          <div className="col-lg-6 col-sm-12 p-2 d-flex justify-content-center ">
+          <div className="col-lg-6 col-sm-12 p-4 d-flex justify-content-center ">
             <img style={{boxShadow: '#ffffff 0px 7px 29px 0px'}} className='w-75' src="https://res.cloudinary.com/dkwftase4/image/upload/v1712920807/White_and_Beige_Minimalist_Designer_Professional_Cv_Resume_3_1_p57ljt.jpg" alt="" />
             
           </div>
