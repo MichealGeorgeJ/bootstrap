@@ -3,7 +3,7 @@ import React from 'react'
 const Bio = ({id}) => {
   return (
     <div id={id}>
-      <div className="container ">
+      <div className=" container">
         <div className="row d-flex">
           <div className="col">
           

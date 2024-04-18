@@ -3,8 +3,11 @@ body {
   font-optical-sizing: auto;
   font-weight: 602;
   font-style: normal;
-  background-color: white;
+  background-color:white;
   color:white;
+  width:100% !important;
+  overflow-x: hidden;
+  
 }
 #about{
   background-color: #7f00ff ;
@@ -496,8 +499,6 @@ font-size:4rem !important;
   #nav-bar{
     height: auto !important;
     padding:0 !important;
-    padding-right:10px !important;
-    padding-left:10px !important;
     
   }
   #about{
