@@ -113,7 +113,7 @@ const About = ({ id }) => {
     <div className='' id={id}>
       <div className=''>
         <div className="row">
-          <div className="col about d-flex justify-content-between flex-row p-5">
+          <div className="col about d-flex justify-content-between flex-row ">
             <div className={`profile-text col-lg-6 col-sm-12 `}>
               {/* Conditional rendering of the name */}
               <h1 className='name'>{typedName}</h1>
@@ -156,8 +156,8 @@ const About = ({ id }) => {
                 </button>
               </div>
             </div>
-            {/* <div  className='circle mb-5'></div> */}
-            <div className='profile-image d-flex justify-content-center align-items-center w-100 image-style pentagon-background'>
+            <div  className='circle mb-5'></div>
+            <div className='profile-image d-flex justify-content-center align-items-center w-75 image-style pentagon-background'>
               <div className='d-flex justify-content-center align-items-center w-100  '>
                 <img style={{backgroundColor:""}} className={`image w-75 `} src="https://res.cloudinary.com/dkwftase4/image/upload/v1711615911/portfolio_pic_jdctnz.png" />
               </div>
