@@ -71,7 +71,7 @@ const About = ({ id }) => {
         // Get the next character from the target string based on the current length of typedName
         const nextChar = 'Hi , I am Micheal George'[typedName.length];
         setTypedName(prevName => prevName + nextChar);
-      }, 100); // Typing speed in milliseconds
+      }, 300); // Typing speed in milliseconds
       return () => clearTimeout(typingTimer);
     }
   }, [typedName]);
@@ -86,7 +86,7 @@ const About = ({ id }) => {
     if (typedElement.current) {
       const typed = new Typed(typedElement.current, {
         strings: ['#Idea', '#Design', '#Coding', '#Testing'],
-        typeSpeed: 150,
+        typeSpeed: 200,
         backSpeed: 150,
         loop: true,
         showCursor: false
@@ -117,9 +117,9 @@ const About = ({ id }) => {
             <div className={`profile-text col-lg-6 col-sm-12 d-flex justify-content-center align-items-center  `}>
               
               <h1 className='name'>{typedName}</h1>
-              <h5 className='description ml-5'>
+              <p className='description ml-5'>
                 I am a fervent <b><span style={{color:"#0f0"}}>full-stack developer</span></b>, committed to translating concepts into digital brilliance. With expertise in both frontend finesse and backend robustness.
-              </h5>
+              </p>
              
              <div className="texts d-flex justify-content-center align-items-center ">
              <div><h1 style={{color:"#0f0"}} ref={typedElement} className=' texts'></h1></div>

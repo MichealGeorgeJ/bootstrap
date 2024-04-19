@@ -7,7 +7,7 @@ const Bio = ({id}) => {
         <div className="row d-flex">
           <div className="col">
           
-            <div className=" bio">
+            <div className=" ">
                         
                           
               <h3>About Me :</h3>
