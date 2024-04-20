@@ -158,7 +158,7 @@ const About = ({ id }) => {
 
             
               <div className='about-btn   d-flex justify-content-center  ' >
-                <button style={{color:"#0f0",backgroundColor:"#36454f",borderRadius:'10px'}}  onClick={() => scrollToSection('bio')} className=' d-flex button-width align-items-center justify-content-center px-3 btn  '>
+                <button style={{color:"#0f0",backgroundColor:"#36454f",borderRadius:'15px'}}  onClick={() => scrollToSection('bio')} className=' d-flex button-width align-items-center justify-content-center px-5 py-3 btn  '>
                  About...
                 </button>
               </div>
