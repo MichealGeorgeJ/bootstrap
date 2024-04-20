@@ -116,22 +116,22 @@ const About = ({ id }) => {
           <div className="col about d-flex justify-content-between flex-row ">
             <div className={`profile-text col-lg-6 col-sm-12 d-flex justify-content-start     `}>
               
-             <div className='d-flex flex-column ml-2   '><h1  className='name '>{typedName}</h1>
+             <div className='d-flex flex-column ml-2   '><h1  className='name  '>{typedName}</h1>
              
              </div>
              <div className=" 
-              developer ml-2">
+              developer item ml-2">
              <div> <p  style={{color:"#0f0"}}>FULL-STACK DEVELOPER</p></div>
              </div>
             
-              <p className='description   ml-2'>
+              <p className='description item   ml-2'>
                  Committed to translating concepts into digital brilliance. With expertise in both frontend finesse and backend robustness.
               </p>
              
              <div className="texts d-flex justify-content-center align-items-center ">
              <div><h1 style={{color:"#0f0"}} ref={typedElement} className=' texts'></h1></div>
              </div>
-            <div className='media-icons d-flex flex-row justify-content-between align-items-center'>
+            <div className='media-icons move-left d-flex flex-row justify-content-between align-items-center'>
             <div className='col' >
         <p >
             <a style={{ textDecoration: "none", color: "#ffffff" }} href="https://www.linkedin.com/in/micheal-george-j-a49224248/">
@@ -163,7 +163,7 @@ const About = ({ id }) => {
                 </button>
               </div>
             </div>
-            <div  className='circle mb-5'></div>
+            <div  className='circle  mb-5 '></div>
             <div className='profile-image d-flex justify-content-center align-items-center w-75 image-style pentagon-background'>
               <div className='d-flex justify-content-center align-items-center w-100  '>
                 <img style={{backgroundColor:""}} className={`image w-75 `} src="https://res.cloudinary.com/dkwftase4/image/upload/v1711615911/portfolio_pic_jdctnz.png" />

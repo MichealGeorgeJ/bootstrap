@@ -652,7 +652,7 @@ margin-bottom:0 !important;
   }
   #about{
     height:85vh !important;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
   }
   body{
     background-color: #7f00ff;
@@ -692,6 +692,57 @@ border: none !important;
   }
  
   
+}
+.move-left{ animation: moveFromRight 5s   alternate; -webkit-animation: moveFromRight 5s   alternate;
+}
+@keyframes moveFromRight{
+  0%{
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+}
+80%{
+  transform: translateX(-10px);
+  
+}
+100%{
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+}
+@keyframes moveFromBottomRight {
+  0% {
+    transform: translate(20px, 20px);
+    
+    -webkit-transform: translate(20px, 20px);
+    -moz-transform: translate(20px, 20px);
+    -ms-transform: translate(20px, 20px);
+    -o-transform: translate(20px, 20px);
+}
+  80%{
+    transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+    -moz-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    -o-transform: translate(-10px, -10px);
+}
+  100% {
+    transform: translate(0, 0); /* Move to original position */
+  }
+}
+
+
+
+
+/* Apply animation to the elements */
+.item {
+   animation: moveFromBottomRight 5s alternate ;
+   
 }
 
 

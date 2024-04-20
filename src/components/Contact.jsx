@@ -42,7 +42,7 @@ const Contact = ({id}) => {
         <div className="col-lg-6 col-sm-12">
           <div className="card p-3">
           <form id="contactForm" onSubmit={formik.handleSubmit}>
-                <div className="form-group">
+                <div className="form-group item">
                   <label htmlFor="name">Name:</label>
                   <input style={{ border: "1px solid #7f00ff" }} type="text" className="form-control" id="name"
                     name="name"
@@ -53,7 +53,7 @@ const Contact = ({id}) => {
                     <div style={{ color: 'red' }}> {formik.errors.name} </div>
                   ) : null}
                 </div>
-                <div className="form-group">
+                <div className="form-group item">
                   <label htmlFor="email">Email:</label>
                   <input style={{ border: "1px solid #7f00ff" }} type="email" className="form-control" id="email"
                     name="email"
@@ -64,7 +64,7 @@ const Contact = ({id}) => {
                     <div style={{ color: 'red' }}> {formik.errors.email} </div>
                   ) : null}
                 </div>
-                <div className="form-group">
+                <div className="form-group item">
                   <label htmlFor="message">Message:</label>
                   <textarea style={{ border: "1px solid #7f00ff", borderRadius: ".2rem" }} className='w-100 px-2' name="message" id="message"
                     onChange={formik.handleChange}
@@ -75,7 +75,7 @@ const Contact = ({id}) => {
                   ) : null}
                 </div>
                 <div className="form-group d-flex justify-content-center">
-                  <button type='submit' style={{  borderRadius: ".5rem", backgroundColor: "#7f00ff" }} className="btn text-white contact-btn "> Send Message </button>
+                  <button type='submit' style={{  borderRadius: ".5rem", backgroundColor: "#7f00ff" }} className="btn text-white contact-btn item "> Send Message </button>
                 </div>
               </form>
           </div>
