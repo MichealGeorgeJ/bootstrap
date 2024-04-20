@@ -1,11 +1,12 @@
 body,html {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: "Source Code Pro",'Protest Riot', monospace;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  color:white;
+  color: white;
  width: 100%;
  border: none !important;
+ text-align:justify;
  
   
 }
@@ -33,7 +34,8 @@ body,html {
 #skills{
   color:black;
   width:100%;
-  overflow: hidden;
+  height: fit-content !important;
+  
 }
 #projects{
   color:black;
@@ -56,7 +58,6 @@ body,html {
 #resume{
   background-image: linear-gradient(to right, #7f00ff 0%, #830ecc 100%);
   position:relative;
-  margin-top:3rem;
   overflow: hidden;
 }
 #certificate{
@@ -160,7 +161,13 @@ body,html {
 }
 
 .name{
-font-size:3.3rem !important;
+font-size:2.5rem !important;
+font-weight: 800;
+display: flex !important;
+align-items: center !important;
+
+
+
 }
 .footer p:hover{
 
@@ -197,7 +204,7 @@ font-size:3.3rem !important;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 5.2rem;
 }
 
 
@@ -235,6 +242,17 @@ font-size:3.3rem !important;
   -o-border-radius:50%;
 }
 
+.media-icons{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  margin:auto;
+}
+.developer{
+  display:flex !important;
+  justify-content:start !important;
+  /* margin:auto; */
+}
 .texts{
   display:flex !important;
   justify-content:center !important;
@@ -242,6 +260,7 @@ font-size:3.3rem !important;
   margin:auto;
 }
 .about-btn{
+  
   margin-top: 4rem;
   margin-left: 17rem;
   /* box-shadow: #ffffff 0px 7px 29px 0px; */
@@ -495,11 +514,15 @@ font-size:3.3rem !important;
   border-top-right-radius: 0;
 }
 
+.skill-icons{
+  width:25px;
+}
+
 .projects-card:hover {
   transform: scale(1.1);
   transition: 1.5s;
   /*scale: 1.1;
-  */box-shadow: #7f00ff 0px 19px 18px , #7f00ff 0px 15px 20px !important;
+  */box-shadow: #7f00ff 0px 5px 5px !important;
   -webkit-transition: 1.5s;
   -moz-transition: 1.5s;
   -ms-transition: 1.5s;
@@ -568,13 +591,10 @@ margin-bottom:0 !important;
    
     
   }
-  .name{
-    
-    font-size: 2rem !important;
-  }
-  .description{
+  
+  /* .description{
     margin:.5rem !important;
-  }
+  } */
   .design{
     left:0;
     
@@ -588,20 +608,40 @@ margin-bottom:0 !important;
   .foo{
     display: flex;
     flex-direction:column !important;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-left: 0 !important;
+    align-items: center;
+    justify-content: center;
     
+ }
+ .foo-icons{
+  display:flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+ }
+ .foo img{
+  width: 1.8rem !important;
  }
  .design1{
   
-  top: 56vh;
-  left: auto !important;
-  right: 0;
+  display: none;
   
 }
+.design2{
+  top:4rem;
+  right: 0;
+  left: auto;
+}
+.design3{
+  top:13rem;
+  left: 0;
+}
  .foo h4{
- 
+ display: none !important;
   border: none !important;
+ }
+ .foo .foo-media{
+  display: none !important;
  }
  .footer{
   margin-left: 0 !important;
@@ -625,14 +665,32 @@ border: none !important;
     
      
    }
+   .name{
+    font-size: 1.6rem !important;
+  
+
+   }
    .description{
-    margin: auto !important;
-    padding: auto !important;
+    
+    
+    align-items: center !important;
+    justify-content: center !important;
    }
    .button-width{
     
-    width:8rem !important;
+    width:8.5rem !important;
    }
+   .name2{
+    margin: auto !important;
+    padding-left: .5rem;
+   }
+   .developer{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    margin:auto;
+  }
+  
   
 }
 

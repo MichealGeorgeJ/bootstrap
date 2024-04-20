@@ -107,7 +107,7 @@ const Skills = ({ id }) => {
               <div className='d-flex justify-content-center '>
                 <h3 className=''>{category.replace(/([A-Z])/g, ' $1').trim()}</h3> 
               </div>
-              <div style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", borderRadius: ".5rem" }} className="card m-3 p-2 projects-card h-100">
+              <div style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", borderRadius: ".5rem" }} className="card m-1 skill-card   projects-card h-100 m-2 p-2">
                 <div className="card-body d-flex flex-column align-items-start">
                  
                   {skillsData[category].map(skill => (

@@ -71,7 +71,7 @@ const About = ({ id }) => {
         // Get the next character from the target string based on the current length of typedName
         const nextChar = 'Hi , I am Micheal George'[typedName.length];
         setTypedName(prevName => prevName + nextChar);
-      }, 300); // Typing speed in milliseconds
+      }, 200); // Typing speed in milliseconds
       return () => clearTimeout(typingTimer);
     }
   }, [typedName]);
@@ -114,19 +114,26 @@ const About = ({ id }) => {
       <div className=''>
         <div className="row">
           <div className="col about d-flex justify-content-between flex-row ">
-            <div className={`profile-text col-lg-6 col-sm-12 d-flex justify-content-center align-items-center  `}>
+            <div className={`profile-text col-lg-6 col-sm-12 d-flex justify-content-start     `}>
               
-              <h1 className='name'>{typedName}</h1>
-              <p className='description ml-5'>
-                I am a fervent <b><span style={{color:"#0f0"}}>full-stack developer</span></b>, committed to translating concepts into digital brilliance. With expertise in both frontend finesse and backend robustness.
+             <div className='d-flex flex-column ml-2   '><h1  className='name '>{typedName}</h1>
+             
+             </div>
+             <div className=" 
+              developer ml-2">
+             <div> <p  style={{color:"#0f0"}}>FULL-STACK DEVELOPER</p></div>
+             </div>
+            
+              <p className='description   ml-2'>
+                 Committed to translating concepts into digital brilliance. With expertise in both frontend finesse and backend robustness.
               </p>
              
              <div className="texts d-flex justify-content-center align-items-center ">
              <div><h1 style={{color:"#0f0"}} ref={typedElement} className=' texts'></h1></div>
              </div>
-             <div className='d-flex justify-between row '>
-    <div className='col'>
-        <p className=''>
+            <div className='media-icons d-flex flex-row justify-content-between align-items-center'>
+            <div className='col' >
+        <p >
             <a style={{ textDecoration: "none", color: "#ffffff" }} href="https://www.linkedin.com/in/micheal-george-j-a49224248/">
                 <img className='icons' src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514293/icons8-linkedin-48_ejmxlf.png" alt="" />
             </a>
@@ -146,12 +153,12 @@ const About = ({ id }) => {
             </a>
         </p>
     </div>
-</div>
+            </div>
           
 
             
               <div className='about-btn w-100  d-flex justify-content-center  ' >
-                <button style={{color:"#0f0",backgroundColor:"#36454f",borderRadius:'10px'}}  onClick={() => scrollToSection('bio')} className='btn d-flex button-width align-items-center justify-content-center w-25  '>
+                <button style={{color:"#0f0",backgroundColor:"#36454f",borderRadius:'10px'}}  onClick={() => scrollToSection('bio')} className='btn d-flex button-width align-items-center justify-content-center  '>
                   <h3 className='mt-2'>About ...</h3>
                 </button>
               </div>

@@ -15,17 +15,19 @@ const Footer = ({ id }) => {
                 <h4  style={{ color: "#ffffff",borderBottom:'2px solid #ffffff' }}>Address :</h4>
                 <p> <img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514292/icons8-address-48_sujwjg.png" alt="" /> 26/125,Mangammal Salai,<br />Devasahayam Mount,Aralvoimozhi <br /> -629301</p>
               </div>
-              <div className="m-2  ml-5 footer">
-                <h4 style={{ color: "#ffffff",borderBottom:'2px solid #ffffff' }}>Social Media :</h4>
-                <p> <img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514293/icons8-linkedin-48_ejmxlf.png" alt="" /> <a style={{ textDecoration: "none", color: "#ffffff" }} href="https://www.linkedin.com/in/micheal-george-j-a49224248/"> LinkedIn</a></p>
-                <p><img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514292/icons8-instagram-48_enib2m.png" alt="" /> <a style={{ textDecoration: "none", color: "#ffffff" }} href="https://www.instagram.com/mich43l__official/?hl=en">Instagram</a></p>
-                <p><img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514981/icons8-twitter-48_obiz0p.png" alt="" /><a style={{ textDecoration: "none", color: "#ffffff" }} href="https://twitter.com/MICHEALGEO1317">Twitter</a></p>
-              </div>
-              <div className="m-2 ml-5 footer ">
+              
+              <div className="m-2 ml-5 footer  ">
                 <h4 style={{ color: "#ffffff",borderBottom:'2px solid #ffffff' }}>Contact :</h4>
-                <p> <img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514292/icons8-gmail-48_ds9uva.png" alt="" /> michealgeorge1317@gmail.com</p>
-                <p> <img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514292/icons8-phone-40_ghuvuz.png" alt="" /> 6382141342 </p>
-                <p> <img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514292/icons8-whatsapp-48_kmgmut.png" alt="" /> 6382141342 </p>
+                <p> <img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514292/icons8-gmail-48_ds9uva.png" alt="" /> <span>
+                michealgeorge1317@gmail.com</span></p>
+                <p> <img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514292/icons8-phone-40_ghuvuz.png" alt="" /> <span> 6382141342</span> </p>
+                
+              </div>
+              <div className="m-2  ml-5 footer foo-icons">
+                <h4 style={{ color: "#ffffff",borderBottom:'2px solid #ffffff' }}>Social Media :</h4>
+                <p>  <a style={{ textDecoration: "none", color: "#ffffff" }} href="https://www.linkedin.com/in/micheal-george-j-a49224248/"> <img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514293/icons8-linkedin-48_ejmxlf.png" alt="" /></a><span className='foo-media'> LinkedIn</span></p>
+                <p> <a style={{ textDecoration: "none", color: "#ffffff" }} href="https://www.instagram.com/mich43l__official/?hl=en"><img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514292/icons8-instagram-48_enib2m.png" alt="" /></a> <span className='foo-media'> Instagram</span></p>
+                <p><a style={{ textDecoration: "none", color: "#ffffff" }} href="https://twitter.com/MICHEALGEO1317"><img src="https://res.cloudinary.com/dkwftase4/image/upload/v1711514981/icons8-twitter-48_obiz0p.png" alt="" /></a> <span className='foo-media'> Twitter</span></p>
               </div>
             </div>
           </div>
