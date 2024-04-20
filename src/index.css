@@ -652,7 +652,10 @@ margin-bottom:0 !important;
   }
   #about{
     height:85vh !important;
-    
+    margin-bottom: 2rem;
+  }
+  body{
+    background-color: #7f00ff;
   }
   #bio{
 border: none !important;
