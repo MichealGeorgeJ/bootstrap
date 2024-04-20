@@ -6,7 +6,7 @@ body,html {
   color: white;
  width: 100%;
  border: none !important;
- text-align:justify;
+
  
   
 }
@@ -23,7 +23,7 @@ body,html {
   margin-top: 4rem;
   width:100%;
   overflow: hidden;
-  height: 110vh !important;
+  height: 115vh !important;
   
 }
 
