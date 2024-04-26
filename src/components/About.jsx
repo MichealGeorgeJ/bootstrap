@@ -66,10 +66,10 @@ const About = ({ id }) => {
 
   useEffect(() => {
     // Simulate typing effect for the name initially
-    if (typedName !== 'Hi , I am Micheal George') {
+    if (typedName !== 'Hi , I am Micheal') {
       const typingTimer = setTimeout(() => {
         // Get the next character from the target string based on the current length of typedName
-        const nextChar = 'Hi , I am Micheal George'[typedName.length];
+        const nextChar = 'Hi , I am Micheal'[typedName.length];
         setTypedName(prevName => prevName + nextChar);
       }, 200); // Typing speed in milliseconds
       return () => clearTimeout(typingTimer);
