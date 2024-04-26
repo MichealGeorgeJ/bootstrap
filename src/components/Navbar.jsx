@@ -58,10 +58,12 @@ const NavBar = ({ id }) => {
             <div className="d-flex justify-content-center align-items-center brand-name"><p style={{marginTop:"1.1rem"}}>Micheal</p></div>
           </Navbar.Brand>
           {/* Conditionally render the hamburger or close icon based on Navbar expansion status */}
+          {/* Hide the icon on large screens */}
           <FontAwesomeIcon
             icon={expanded ? faTimes : faBars} // Use faTimes when expanded, faBars otherwise
-            style={{ color: '#7f00f0', fontSize: '2rem', cursor: 'pointer' }}
+            style={{ color: '#7f00f0', fontSize: '1.6rem', cursor: 'pointer'}} // Initially hide the icon
             onClick={toggleNavbar}
+            className="d-lg-none mr-2" // Hide the icon on large screens
           />
           <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
             <Nav className="me-auto nav-bar nav-group">
