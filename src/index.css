@@ -391,17 +391,11 @@ align-items: center !important;
 @keyframes movetop {
   from {
     transform: translateY(5px);
-    -webkit-transform: translateY(5px);
-    -moz-transform: translateY(5px);
-    -ms-transform: translateY(5px);
-    -o-transform: translateY(5px);
+    
 }
   to {
     transform: translateY(20px);
-    -webkit-transform: translateY(20px);
-    -moz-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    -o-transform: translateY(20px);
+ 
 }
 }
 
